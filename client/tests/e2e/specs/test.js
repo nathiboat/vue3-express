@@ -19,3 +19,5 @@ describe("Test profile page ", () => {
     cy.contains("button", "Save All");
   });
 });
+
+

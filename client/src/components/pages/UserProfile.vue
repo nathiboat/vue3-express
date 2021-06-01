@@ -4,7 +4,6 @@
       <NavBar/> 
       <section class="container w-full mx-auto pt-20">
         <BodyPanel/>
-       
       </section>
     </div>
   </div>

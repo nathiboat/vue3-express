@@ -35,6 +35,10 @@ export default createStore({
         })
 
       commit('setLanguages', languages)
+    },
+    requestSendUserData: async () => {
+      let data = await axios.post('http://localhost:3000/users')
+
     }
   },
   modules: {},
