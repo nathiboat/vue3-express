@@ -16,7 +16,7 @@ import NavBar from "../sections/NavBar.vue";
 import BodyPanel from "../sections/UserInfo.vue";
 
 export default defineComponent({
-  name: "App",
+  name: "UerProfile",
   components: {
     NavBar, 
     BodyPanel,

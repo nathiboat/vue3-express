@@ -1,4 +1,4 @@
-7<template>
+<template>
     <section class="w-full p-3">   
         <div class="flex bg-white border shadow p-5">
           

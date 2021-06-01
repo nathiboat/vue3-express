@@ -34,7 +34,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-, "src/components/layout/NavBar.vue"  ],
+, "src/components/layout/NavBar.vue", "src/components/sections/UserInfo.vue"  ],
   "exclude": [
     "node_modules"
   ]

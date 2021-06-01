@@ -7,6 +7,7 @@ import "./assets/index.css";
 import Button from "./components/base/Button.vue"
 import Avatar from "./components/base/Avatar.vue"
 import ProgressBar from "./components/base/ProgressBar.vue"
+import NavBar from "./components/sections/NavBar.vue"
 
 
 const app = createApp(App);
@@ -14,4 +15,5 @@ const app = createApp(App);
 app.component('BaseButton', Button);
 app.component('Avatar', Avatar);
 app.component('ProgressBar', ProgressBar);
+app.component('NavBar', NavBar);
 app.use(store).mount("#app");

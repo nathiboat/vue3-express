@@ -3,27 +3,27 @@
       <form action="#" method="POST">
         <div class="shadow overflow-hidden sm:rounded-md">
           <div class="px-4 py-5 bg-white sm:p-6">
-             <h2 class="text-lg"><b>User Details</b></h2>
+             <h2 class="text-lg mb-5"><b>User Details</b></h2>
             <div class="grid grid-cols-6 gap-6">
               <div class="col-span-6 sm:col-span-3">
-                <label for="first_name" class="block text-sm font-medium text-gray-700">First Name</label>
-                <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                <label for="first_name" :class="labelClass">First Name</label>
+                <input type="text" name="first_name" id="first_name" autocomplete="given-name" :class="inputClass">
               </div>
 
               <div class="col-span-6 sm:col-span-3">
-                <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name</label>
-                <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                <label for="last_name" :class="labelClass">Last Name</label>
+                <input type="text" name="last_name" id="last_name" autocomplete="family-name" :class="inputClass">
               </div>
 
                <div class="col-span-6 sm:col-span-3">
-                <label for="street_address" class="block text-sm font-medium text-gray-700">User Name</label>
-                <input type="text" name="street_address" id="street_address" autocomplete="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                <label for="street_address" :class="labelClass">User Name</label>
+                <input type="text" name="street_address" id="street_address" autocomplete="street-address" :class="inputClass">
               </div>
 
 
               <div class="col-span-6 sm:col-span-3">
-                <label for="email_address" class="block text-sm font-medium text-gray-700">Default Email</label>
-                <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                <label for="email_address" :class="labelClass">Default Email</label>
+                <input type="text" name="email_address" id="email_address" autocomplete="email" :class="inputClass">
               </div>
 
              <div class="col-span-6 sm:col-span-3">
@@ -34,9 +34,9 @@
                 </select>
               </div>
 
-              <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                <label for="state" class="block text-sm font-medium text-gray-700">Designation</label>
-                <input type="text" name="state" id="state" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              <div class="col-span-6 sm:col-span-3 lg:col-span-3">
+                <label for="state" :class="labelClass">Designation</label>
+                <input type="text" name="state" id="state" :class="inputClass">
               </div>
 
             
@@ -47,6 +47,19 @@
       </form>
     </div>
 </template>
+
+<script>
+
+export default {
+  data () {
+    return { 
+      inputClass: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
+      labelClass: 'ml-4 block text-md font-medium text-gray-700'
+    }
+  }
+}
+</script>
+
 
 
 
