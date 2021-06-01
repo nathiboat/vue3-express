@@ -13,8 +13,8 @@
                 </div>
                 <p class="text-center md:text-left text-md my-3">Your Profile is 25% Complete</p>
             </div>
-            <div class="flex flex-row sm:flex-col md:flex-col-reverse w-full sm:w-auto md:w-3/6">
-                <div class="flex flex-col sm:flex-auto md:flex-row-reverse w-full ">
+            <div class="w-full sm:w-auto md:w-3/6 flex flex-row flex-end align-end justify-self-end" style="align-items: flex-end">
+                <div class="flex flex-col sm:flex-auto md:flex-row-reverse w-full col-end-auto">
                     <base-button color="green" class="mb-3" @click="handleSendUserData">Save All</base-button>
                     <base-button color="red" class="md:mr-3">Reset Password</base-button>
                 </div>

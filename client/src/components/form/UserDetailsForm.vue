@@ -49,15 +49,22 @@
 </template>
 
 <script>
+import { defineComponent } from "vue"
+import { mapMutations } from "vuex"
 
-export default {
+export default defineComponent ({
   data () {
     return { 
       inputClass: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline',
       labelClass: 'ml-4 block text-md font-medium text-gray-700'
     }
+  },
+  methods: {
+    ...mapMutations({
+      
+    })
   }
-}
+})
 </script>
 
 

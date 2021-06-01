@@ -21,3 +21,22 @@ describe("Test profile page ", () => {
 });
 
 
+describe("Test api request ", () => {
+
+  it("Visits the api language url", () => {
+    cy.request('GET', 'http://localhost:3000/languages')
+      .its('body').should('include', "English")
+      
+  });
+
+  it("Post request to user api", () => {
+    cy.request('POST', 'http://localhost:3000/users')
+      .its('body').should('include', 'Post to users')
+      
+  });
+});
+
+
+
+
+

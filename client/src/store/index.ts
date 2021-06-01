@@ -5,8 +5,15 @@ export default createStore({
   state: {
     languages: [],
     defaultInterface: ['ETH', 'Compliance'],
-    currentPage: 'HomePage'
-
+    currentPage: 'HomePage',
+    userForm: {
+      firstName: '',
+      lastName: '',
+      userName: '',
+      title: '',
+      emai: '',
+      designation: ''
+    }
   },
   getters: {
     languages: state => {
@@ -25,6 +32,9 @@ export default createStore({
     },
     setCurrentPage (state, data) {
       state.currentPage = data
+    },
+    setUserForm (state, data) {
+      state.userForm
     }
   },
   actions: {
