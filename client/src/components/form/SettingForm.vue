@@ -77,6 +77,11 @@ export default {
       labelClass: "ml-4 block text-md font-medium text-gray-700",
     }
   },
+  props:{
+      form: [
+        
+      ]
+  },
   computed:{
     ...mapGetters({
       languages: 'languages',

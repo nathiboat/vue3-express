@@ -15,8 +15,9 @@
 </template>
 
 <script>
-export default {
-  inheritAttrs: false,
+import { defineComponent } from "vue"
+
+export default defineComponent({
   props: {
     name: {
       type: String,
@@ -36,7 +37,7 @@ export default {
     }
   },
   computed: {
-    sizeClasses() {
+    sizeClasses () {
       const sizeMappings = {
         sm: `h-12 w-12`,
         md: `h-16 w-16 text-xl`,
@@ -57,5 +58,5 @@ export default {
       return this.name.charAt(0);
     }
   }
-};
+})
 </script>
